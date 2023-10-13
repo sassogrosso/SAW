@@ -22,13 +22,14 @@
     <button  type="submit" class="registerbtn">SUBMIT</button>
 <?php
     if (isset($_POST['password']) and isset($_POST['Email'])) {
-    $date=date('H:i');
-    $email=$_POST['Email'];
-    $password = $_POST['password'];
-    $fp = fopen('data.txt', 'w');
-    fwrite($fp,$date." ".$email." ".$password."n");
-    fclose($fp);
-} else {
+        $date=date('H:i');
+        $email=$_POST['Email'];
+        $password = $_POST['password'];
+        $fp = fopen('data.txt', 'w');
+        fwrite($fp,$date." ".$email." ".$password."n");
+        fclose($fp);
+    } 
+else {
     echo "La chiave 'password' non è stata inviata tramite il modulo.";
 }
 ?>
