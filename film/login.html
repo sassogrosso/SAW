@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Benvenuto alla parte di registrazione al sito LCA</h1>
+    <form action="login.php" method="post">
+        <fieldset class="bordo">
+        <legend>Credenziali da inserire</legend>
+        <img src="https://static.miraheze.org/nonciclopediawiki/7/7d/ChefTony_small.jpg" alt="">
+        <label for="email">Email</label><br >
+        <input type="email" placeholder="enter mail" id="email" name="Email" required><br>
+        <label for="password">password</label><br >
+        <input type="password" placeholder="enter password" id="password" maxlength="24" minlength="6" name="password" required><br>
+        <div>
+            <p>Hai dimenticato la password? <a href="info.html">Clicca per maggiori informazioni</a>.</p>
+            <p>Account non ancora registrato? <a href="registration.html">Effettua la registrazione</a></p>
+            </div>
+        </fieldset>
+        <button type="submit" name="submit" class="registerbtn">SUBMIT</button>
+    </form>
+</body>
+</html>
